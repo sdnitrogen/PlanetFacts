@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="20dp"
-    android:layout_marginBottom="15dp"
+    android:layout_marginTop="7.5dp"
+    android:layout_marginBottom="7.5dp"
     android:gravity="center_vertical"
     android:padding="10dp">
     <ImageView
@@ -28,7 +29,7 @@
             android:layout_marginStart="80dp"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/planet_title"
+                android:id="@+id/planet_name"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="10dp"
@@ -40,6 +41,7 @@
                 android:textSize="23sp"
                 android:textStyle="bold" />
             <TextView
+                android:id="@+id/planet_galaxy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-7dp"
@@ -62,6 +64,7 @@
                     android:layout_height="23dp"
                     android:src="@drawable/ic_distance"/>
                 <TextView
+                    android:id="@+id/planet_dist"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="2dp"
@@ -76,6 +79,7 @@
                     android:layout_marginStart="10dp"
                     android:src="@drawable/ic_gravity"/>
                 <TextView
+                    android:id="@+id/planet_gravity"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="2dp"
