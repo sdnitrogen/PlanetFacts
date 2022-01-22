@@ -3,7 +3,8 @@
 PlanetFacts is an offline simple, modern & material-designed educational Android application for kids. It contains basic facts with visual illustrations about the planets in our solar system.<br/>
 
 <div style="display:flex;" >
-<a download="" href="PlanetFacts.apk">
+<br/>
+<a href="https://github.com/sdnitrogen/PlanetFacts/raw/main/PlanetFacts.apk">
     <img src="https://img.shields.io/badge/Download-APK-3DDC84?style=for-the-badge"/>
 </a>
 </div>
