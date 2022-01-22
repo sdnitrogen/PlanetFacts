@@ -1,5 +1,5 @@
 ## PlanetFacts
-<img src="planet-earth.svg" align="left" width="200" hspace="10" vspace="10" margin="25px">
+<img src="planet-earth.svg" align="left" width="200" hspace="10" vspace="10" style="margin:25px;">
 PlanetFacts is an offline simple, modern & material-designed educational Android application for kids. It contains basic facts with visual illustrations about the planets in our solar system.<br/>
 
 <div style="display:flex;" >
