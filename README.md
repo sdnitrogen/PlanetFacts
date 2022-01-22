@@ -1,12 +1,26 @@
 ## PlanetFacts
+<img src="planet-earth.svg" align="left" width="200" hspace="10" vspace="10">
 PlanetFacts is an offline simple, modern & material-designed educational Android application for kids. It contains basic facts with visual illustrations about the planets in our solar system.<br/>
 
-![Dev Status](https://img.shields.io/badge/Development-in%20Progress-DC143C?style=for-the-badge)
+<div style="display:flex;" >
+<a download="" href="PlanetFacts.apk">
+    ![Dev Status](https://img.shields.io/badge/Download-APK-3DDC84?style=for-the-badge)
+</a>
+</div>
+
+</br></br>
+
+## Screenshots
+<div style="display:flex;" >
+<img src="Screenshot1.jpg" width="24%" >
+<img style="margin-left:10px;" src="Screenshot2.jpg" width="24%" >
+<img style="margin-left:10px;" src="Screenshot3.jpg" width="24%" >
+<img style="margin-left:10px;" src="Screenshot4.jpg" width="24%" >
+</div>
 
 ### Features
 - Fluid UI with Material design
 - High quality and intuitive illustrations
-- Rate the app feature
 
 ## Tech
 ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)<br>
