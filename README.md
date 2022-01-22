@@ -4,7 +4,7 @@ PlanetFacts is an offline simple, modern & material-designed educational Android
 
 <div style="display:flex;" >
 <a download="" href="PlanetFacts.apk">
-    ![Dev Status](https://img.shields.io/badge/Download-APK-3DDC84?style=for-the-badge)
+    [![Dev Status](https://img.shields.io/badge/Download-APK-3DDC84?style=for-the-badge)]
 </a>
 </div>
 
