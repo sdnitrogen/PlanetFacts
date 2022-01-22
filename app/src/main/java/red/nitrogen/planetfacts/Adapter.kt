@@ -1,5 +1,6 @@
 package red.nitrogen.planetfacts
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,6 +23,16 @@ class Adapter(var planets:List<PlanetData>): RecyclerView.Adapter<Adapter.ViewHo
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var imgHolder:Int? = null
+        var imgInternalHolder:Int? = null
+        var imgGeologyHolder:Int? = null
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, PlanetDetailActivity::class.java)
+            intent.putExtra("planet", planets[position])
+            intent.putExtra("planetImage", imgHolder)
+            intent.putExtra("planetInternal", imgInternalHolder)
+            intent.putExtra("planetGeology", imgGeologyHolder)
+            holder.itemView.context.startActivity(intent)
+        }
         holder.title.text = planets[position].name
         holder.galaxy.text = planets[position].galaxy
         holder.distance.text = planets[position].distance
@@ -54,6 +65,58 @@ class Adapter(var planets:List<PlanetData>): RecyclerView.Adapter<Adapter.ViewHo
         }
         if (imgHolder != null) {
             holder.image.setImageResource(imgHolder)
+        }
+        when(planets[position].name!!.lowercase()) {
+            "mercury" -> {
+                imgInternalHolder = R.drawable.ic_planet_mercury_internal
+            }
+            "venus" -> {
+                imgInternalHolder = R.drawable.ic_planet_venus_internal
+            }
+            "earth" -> {
+                imgInternalHolder = R.drawable.ic_planet_earth_internal
+            }
+            "mars" -> {
+                imgInternalHolder = R.drawable.ic_planet_mars_internal
+            }
+            "jupiter" -> {
+                imgInternalHolder = R.drawable.ic_planet_jupiter_internal
+            }
+            "saturn" -> {
+                imgInternalHolder = R.drawable.ic_planet_saturn_internal
+            }
+            "uranus" -> {
+                imgInternalHolder = R.drawable.ic_planet_uranus_internal
+            }
+            "neptune" -> {
+                imgInternalHolder = R.drawable.ic_planet_neptune_internal
+            }
+        }
+        when(planets[position].name!!.lowercase()) {
+            "mercury" -> {
+                imgGeologyHolder = R.drawable.geology_mercury
+            }
+            "venus" -> {
+                imgGeologyHolder = R.drawable.geology_venus
+            }
+            "earth" -> {
+                imgGeologyHolder = R.drawable.geology_earth
+            }
+            "mars" -> {
+                imgGeologyHolder = R.drawable.geology_mars
+            }
+            "jupiter" -> {
+                imgGeologyHolder = R.drawable.geology_jupiter
+            }
+            "saturn" -> {
+                imgGeologyHolder = R.drawable.geology_saturn
+            }
+            "uranus" -> {
+                imgGeologyHolder = R.drawable.geology_uranus
+            }
+            "neptune" -> {
+                imgGeologyHolder = R.drawable.geology_neptune
+            }
         }
     }
 

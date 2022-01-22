@@ -11,4 +11,6 @@
     <color name="secondary">#5C5493</color>
     <color name="subtext">#DDDBDB</color>
     <color name="dash">#03A9F4</color>
+    <color name="button">#6F2ED6</color>
+    <color name="bgheader">#070722</color>
 </resources>

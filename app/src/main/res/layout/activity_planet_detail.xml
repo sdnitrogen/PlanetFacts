@@ -228,4 +228,60 @@
                 </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="14dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Overview"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"/>
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dash"/>
+                <TextView
+                    android:id="@+id/text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:lineSpacingExtra="1dp"
+                    android:text="Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth."
+                    android:textColor="@color/subtext"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/button_info"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/button"
+            android:text="Overview"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="20sp"/>
+    </LinearLayout>
 </LinearLayout>
